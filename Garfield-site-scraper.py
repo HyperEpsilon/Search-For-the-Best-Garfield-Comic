@@ -5,6 +5,7 @@ startdate = datetime.date(1985,1,1)
 date = startdate
 for _ in range(5):
     if date.isoweekday() == 7:
+        date += datetime.timedelta(days=1)
         continue
     
     day = date.day
