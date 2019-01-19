@@ -3,7 +3,7 @@ import datetime, urllib.request
 startdate = datetime.date(1985,1,1)
 
 date = startdate
-for _ in range(5):
+for _ in range(365):
     if date.isoweekday() == 7:
         date += datetime.timedelta(days=1)
         continue
